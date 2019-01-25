@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="jboss-logging-3.1.0.GA">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jboss-logging-3.1.0.GA.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jboss-transaction-api_1.1_spec-1.0.1.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-8.0.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

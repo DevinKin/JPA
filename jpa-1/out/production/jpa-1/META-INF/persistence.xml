@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="jpa-1" transaction-type="RESOURCE_LOCAL">
+        <!-- 配置使用什么ORM产品来作为JPA的实现
+            1. 实际上配置的是javax.persistence.spi.PersistenceProvider 接口的实现类
+            2. 若JPA项目中只有一个JPA的实现产品，则也可以不配置该节点。
+        -->
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+
+        <!-- 添加持久化类 -->
+        <class>com.devinkin.jpa.helloworld.Customer</class>
+        <class>com.devinkin.jpa.helloworld.Order</class>
+        <class>com.devinkin.jpa.helloworld.Manager</class>
+        <class>com.devinkin.jpa.helloworld.Department</class>
+        <class>com.devinkin.jpa.helloworld.Category</class>
+        <class>com.devinkin.jpa.helloworld.Item</class>
+
+
+        <!-- 配置二级缓存的策略 -->
+        <shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>
+
+
+
+        <properties>
+            <!-- 配置连接数据库的基本信息 -->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://192.168.8.129/jpa"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="123456"/>
+
+            <!-- 配置JPA 实现产品的基本属性，配置Hibernate的基本属性 -->
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+
+
+            <!-- 二级缓存相关配置 -->
+            <property name="hibernate.cache.use_second_Level_cache" value="true"/>
+            <property name="hibernate.cache.region.factory_class" value="org.hibernate.cache.ehcache.EhCacheRegionFactory"/>
+            <property name="hibernate.cache.use_query_cache" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>

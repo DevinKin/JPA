@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="antlr-2.7.7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/antlr-2.7.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/dom4j-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ehcache-core-2.4.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hibernate-commons-annotations-4.0.2.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hibernate-core-4.2.4.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hibernate-ehcache-4.2.4.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hibernate-entitymanager-4.2.4.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javassist-3.15.0-GA.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
